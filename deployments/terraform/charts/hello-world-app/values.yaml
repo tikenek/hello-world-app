@@ -28,7 +28,7 @@ ingress:
       - /
 
   tls: 
-  - secretName: hello-world-app-tls
+  - secretName: hello-world-tls
     hosts:
     - ${deployment_endpoint}
 
