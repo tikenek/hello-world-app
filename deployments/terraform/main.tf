@@ -1,5 +1,5 @@
 module "academy-deploy" {
-  source  = "tuyalou/helm/chart"
+  source  = "tuyalou/chart/helm"
   deployment_name        = "hello-world"
   deployment_environment = "${var.deployment_environment}"
   deployment_endpoint    = "${lookup(var.deployment_endpoint, "${var.deployment_environment}")}.${var.google_domain_name}"
